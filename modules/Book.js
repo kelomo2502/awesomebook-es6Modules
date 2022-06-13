@@ -1,13 +1,13 @@
-class See {
+class Book {
   constructor(inputTitle, inputAuthor) {
     this.title = inputTitle;
     this.author = inputAuthor;
   }
 
   static displayAll() {
-    const list = See.get();
+    const list = Book.get();
     if (list) {
-      list.forEach((book) => See.display(book));
+      list.forEach((book) => Book.display(book));
     }
   }
 
@@ -39,13 +39,13 @@ class See {
   }
 
   static add(book) {
-    const list = See.get();
+    const list = Book.get();
     list.push(book);
     localStorage.setItem('memory', JSON.stringify(list));
   }
 
   static delete(writer) {
-    const list = See.get();
+    const list = Book.get();
 
     list.forEach((book, index) => {
       if (book.author === writer) {
@@ -55,4 +55,4 @@ class See {
     localStorage.setItem('memory', JSON.stringify(list));
   }
 }
-export default See;
+export default Book;
