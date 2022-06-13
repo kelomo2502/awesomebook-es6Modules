@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', showBookList);
 const dateTime = document.querySelector('#date');
 const clock = () => {
   const currentDateTime = DateTime.now().toLocaleString(
-    DateTime.DATETIME_FULL_WITH_SECONDS
+    DateTime.DATETIME_FULL_WITH_SECONDS,
   );
   dateTime.innerHTML = currentDateTime;
 };
