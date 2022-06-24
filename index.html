@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A complete website with navigation</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2><a href="#">Awesome Books</a></h2>
+            <ul class="link">
+                <li><a href="#" id="list">List</a></li>
+                <li><a  href="#" id="add-new">Add new</a></li>
+                <li><a  href="#" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+        <span id="date"></span>
+    </header>
+
+  <div class="main">
+    <section id="id1" class="display">
+        <h1>All awesome books</h1>
+        <div class="books">
+
+        </div>
+    </section><br>
+
+    <form id="id2" method="post">
+        <h2>Add a new book</h2>
+        <input type="text" id="title" name="title" placeholder="Title" required><br><br>
+        <input type="text" id="author" name="author" placeholder="Author" required><br><br>
+        <input type="submit" class="done" value="Add" id="submit">
+    </form>
+    <section id="id3" class="contact">
+        <div>
+           <h2>Contact information</h2>
+           <p>Do you have any questions or you just want to say "hello"? You can reach out to us!</p>
+           <ul>
+               <li>Our email: kelvinoye@gmail.com</li>
+               <li>Our phone number: +2348135724403</li>
+               <li>Our address: Awoyaya Primary School, 100021, Lagos. Country Nigeria</li>
+           </ul>
+        </div>
+    </section>
+    </div>
+    <footer class="copy">
+        <div class="copyright">
+          <small>Copyright &copy;Gbenga</small>
+        </div>
+      </footer>
+</body>
+</html>
